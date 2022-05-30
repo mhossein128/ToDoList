@@ -5,6 +5,13 @@ let tbody = document.querySelector("tbody")
 let theme = document.querySelector('#theme')
 let taskList = new Array()
 
+input.addEventListener('keydown',(e)=>{
+    if(e.keyCode === 13 ) {
+        e.preventDefault()
+        btn.click()
+    }
+})
+
 // theme Event's
 theme.addEventListener('click' , () => {
     // change icon 
